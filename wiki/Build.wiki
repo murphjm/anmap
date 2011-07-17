@@ -23,7 +23,7 @@ Universal class to start/stop/restart/reload config/etc for any daemons from ssh
 <h1>1.Content: </h1>
 <i>(xml skelet)</i>
 
-<h1>2.Edit: </h1>
+<h1>2.Edit(Main window): </h1>
 <i>(nmap command line [popup help] 4ex. current command translation to human language)
 get value in button,</i>
 <br>
