@@ -109,7 +109,7 @@ Man page / ( nmap -h ) / some doc or links
 }}}
 <h1>8.Button(Menu): Bug report/Test how it doing</h1><br>
 <i> (Verbose, Sillent)</i> <br>
-<font color="green">7.a Button(internal): Send bug report.</font><br>
+<font color="green"><h2>Button(internal): Send bug report.</h2></font><br>
 try to send me email - bug report with full debug log  of root/unroot scanning, and other info, such as: <br>
 1. all system data: set, env, root_dir, sdcard_dir, file systems, phone generation, os version etc. <br>
 2. md5,sha256 of current unpacked apk release.<br>
