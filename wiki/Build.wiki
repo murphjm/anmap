@@ -2,20 +2,10 @@
 
 = How-to build new version =
 
-<font color="gray"> <h1> Android Network Mapper ( nmap for android )</h1> </font>
+tar.gz
+etc
 
-<font color="red">  <h1> Under contruction </h1> </font>
-
-
-
-related:<br>
-<a href="http://code.google.com/p/anmap/"> code.google.com</a> 
-
-<a href="http://code.google.com/p/cidrcalculator/source/browse/trunk/src/us/lindanrandy/cidrcalculator/Converter.java"> http://code.google.com/p/cidrcalculator/source/browse/trunk/src/us/lindanrandy/cidrcalculator/Converter.java </a> <br>
-
-<a href="https://github.com/rorist/android-network-discovery"> https://github.com/rorist/android-network-discovery </a>
-
-TODO:
+= Details =
 <h1>0.Daemon jobs class: </h1>
 <i>SIGNALL's, kill -HUP -9 etc</i>
 
@@ -127,9 +117,3 @@ View in real time state netland, like a top(UNIX).
 
 }}}
 
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
