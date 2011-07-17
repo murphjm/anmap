@@ -60,12 +60,9 @@ etc.. <br>
  }
 }}}
 
-<h1>3.Execution comman line in Java(True way).</h1>
-<h1>4.Get output</h1>
-stdout in real time + some android round snake features<br>
+<h1>4.Get output(like connectbot)</h1>
 
-<h1><font color="red"> look at terminal source.  </font> </h1>
-
+[http://code.google.com/p/connectbot/ connectbot]
 
 <br>
 <h1>5.Get root right</h1>
