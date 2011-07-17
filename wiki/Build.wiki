@@ -5,6 +5,15 @@
 tar.gz
 etc
 
+
+related:<br>
+<a href="http://code.google.com/p/anmap/"> code.google.com</a> 
+
+<a href="http://code.google.com/p/cidrcalculator/source/browse/trunk/src/us/lindanrandy/cidrcalculator/Converter.java"> http://code.google.com/p/cidrcalculator/source/browse/trunk/src/us/lindanrandy/cidrcalculator/Converter.java </a> <br>
+
+<a href="https://github.com/rorist/android-network-discovery"> https://github.com/rorist/android-network-discovery </a>
+
+
 = Details =
 <h1>0.Daemon jobs class: </h1>
 <i>SIGNALL's, kill -HUP -9 etc</i>
@@ -116,4 +125,3 @@ View in real time state netland, like a top(UNIX).
 (by nmap -O -iL current_ip_list)
 
 }}}
-
