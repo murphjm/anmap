@@ -2,6 +2,8 @@
 
 = How-to build new version =
 
+<font color="red"> This is sketch. </font>
+
 tar.gz
 etc
 
