@@ -7,11 +7,11 @@ etc
 
 
 related:<br>
-<a href="http://code.google.com/p/anmap/"> code.google.com</a> 
-
-<a href="http://code.google.com/p/cidrcalculator/source/browse/trunk/src/us/lindanrandy/cidrcalculator/Converter.java"> http://code.google.com/p/cidrcalculator/source/browse/trunk/src/us/lindanrandy/cidrcalculator/Converter.java </a> <br>
-
-<a href="https://github.com/rorist/android-network-discovery"> https://github.com/rorist/android-network-discovery </a>
+[http://code.google.com/p/anmap/ code.google.com]
+[http://code.google.com/p/androidterm/ androidterm]
+[http://code.google.com/p/cidrcalculator/source/browse/trunk/src/us/lindanrandy/cidrcalculator/Converter.java cidrcalculator/..blabla../Converter.java] 
+[https://github.com/rorist/android-network-discovery android-network-discovery]
+[http://code.google.com/p/connectbot/ connectbot]
 
 
 = Details =
@@ -34,7 +34,7 @@ etc.. <br>
 <h1>3.Button: start nmap</h1>
 <i> check for true root privilegies flags, stop with toast or get root and start[Button2: root enable/disable] </i>
 
-<pre>
+{{{
  public class MyActivity extends Activity {
      protected void onCreate(Bundle icicle) {
          super.onCreate(icicle);
@@ -49,7 +49,8 @@ etc.. <br>
          });
      }
  }
-</pre>
+}}}
+
 <h1>3.Execution comman line in Java(True way).</h1>
 <h1>4.Get output</h1>
 stdout in real time + some android round snake features<br>
@@ -61,7 +62,9 @@ stdout in real time + some android round snake features<br>
 <h1>5.Get root right</h1>
 http://www.google.com/search?btnG=1&pws=0&q=request+root+access+android<br>
 <a href="http://www.stealthcopter.com/blog/2010/01/android-requesting-root-access-in-your-app/">http://www.stealthcopter.com/blog/2010/01/android-requesting-root-access-in-your-app/</a><br>
-<pre>
+
+{{{
+
 public static boolean runRootCommand(String command) {
         Process process = null;
         DataOutputStream os = null;
@@ -88,8 +91,11 @@ public static boolean runRootCommand(String command) {
                 }
                 return true;
     }
-</pre>
+
+}}}
+
 <h1>6.Button(Menu): Help </h1>
+{{{
 Man page / ( nmap -h ) / some doc or links
 
 <h1>7.Button(Menu): Bug report/Test how it doing</h1><br>
@@ -101,15 +107,16 @@ try to send me email - bug report with full debug log  of root/unroot scanning, 
 3. result of scanning some special targets.(some tower wich will log it) + timestamp<br>
 <br>
  <br>
-
+}}}
 
 <h1>8.Button(Menu): Journal</h1>
+{{{
 <i> history by ips/domain-names located on sdcard. </i>
 When you try again any ip, you can get diff highlighted on old scan log  "+"/"-" new/old line.<br>
 Some cool format to contain this diff in long time. <br>
 with all things <br>
 <br>
-
+}}}
 <h1>9.Monitor mode(like ntop) (probably, stand alone app)</h1>
 {{{
 Network discovery.
