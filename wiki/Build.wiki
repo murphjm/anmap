@@ -106,7 +106,7 @@ public static boolean runRootCommand(String command) {
 <h1>7.Button(Menu): Help </h1>
 {{{
 Man page / ( nmap -h ) / some doc or links
-
+}}}
 <h1>8.Button(Menu): Bug report/Test how it doing</h1><br>
 <i> (Verbose, Sillent)</i> <br>
 <font color="green">7.a Button(internal): Send bug report.</font><br>
@@ -116,7 +116,7 @@ try to send me email - bug report with full debug log  of root/unroot scanning, 
 3. result of scanning some special targets.(some tower wich will log it) + timestamp<br>
 <br>
  <br>
-}}}
+
 
 <h1>9.Button(Menu): Journal</h1>
 {{{
