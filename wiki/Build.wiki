@@ -66,8 +66,9 @@ etc.. <br>
 
 <br>
 <h1>5.Get root right</h1>
-http://www.google.com/search?btnG=1&pws=0&q=request+root+access+android<br>
-<a href="http://www.stealthcopter.com/blog/2010/01/android-requesting-root-access-in-your-app/">http://www.stealthcopter.com/blog/2010/01/android-requesting-root-access-in-your-app/</a><br>
+[http://www.google.com/search?btnG=1&pws=0&q=request+root+access+android]
+
+[http://www.stealthcopter.com/blog/2010/01/android-requesting-root-access-in-your-app/]
 
 {{{
 
