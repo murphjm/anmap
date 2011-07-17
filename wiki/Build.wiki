@@ -92,7 +92,7 @@ public static boolean runRootCommand(String command) {
 <h1>6.Button(Menu): Help </h1>
 Man page / ( nmap -h ) / some doc or links
 
-<h1>7.Button(Menu): Bug report/Test how it working</h1><br>
+<h1>7.Button(Menu): Bug report/Test how it doing</h1><br>
 <i> (Verbose, Sillent)</i> <br>
 <font color="green">7.a Button(internal): Send bug report.</font><br>
 try to send me email - bug report with full debug log  of root/unroot scanning, and other info, such as: <br>
