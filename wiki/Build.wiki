@@ -8,15 +8,24 @@ etc
 
 related:<br>
 [http://code.google.com/p/anmap/ code.google.com]
+
 [http://code.google.com/p/androidterm/ androidterm]
+
 [http://code.google.com/p/cidrcalculator/source/browse/trunk/src/us/lindanrandy/cidrcalculator/Converter.java cidrcalculator/..blabla../Converter.java] 
+
 [https://github.com/rorist/android-network-discovery android-network-discovery]
+
 [http://code.google.com/p/connectbot/ connectbot]
+
 
 
 = Details =
 <h1>0.Daemon jobs class: </h1>
-<i>SIGNALL's, kill -HUP -9 etc</i>
+<i>SIGNALL's, 
+kill 
+-HUP 
+-9 
+etc</i>
 
 Universal class to start/stop/restart/reload config/etc for any daemons from sshd to apache.
 
