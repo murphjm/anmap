@@ -50,6 +50,7 @@ This is the end.
 For windows user - linux unrequired.
 
 #TODO
+
 [http://not_done_yet Download debian image.(Not done yet)]:
   * MD5:
   * SHA256:
