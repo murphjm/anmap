@@ -256,3 +256,11 @@ Voila, starting lxde.
 Stopping androidVNC and enter to [http://code.google.com/p/connectbot/ ConnectBot].
 
 Type "exit".
+
+==Developer's==
+
+Entering in debian by  [http://code.google.com/p/connectbot/ ConnectBot] and type:
+{{{
+apt-get install g++
+}}}
+Download what you want, compile from source, it would be work.
