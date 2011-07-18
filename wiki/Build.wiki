@@ -1,10 +1,10 @@
 #summary One-sentence summary of this page.
 
 = How-to build new version =
+<font color="red"><h2> sketch </h2> </font>
 
-<font color="red"><h2> This is sketch.</h2> </font>
-
-Compile from source with [http://code.google.com/p/anmap/wiki/developers_land_debian2android Debian] and [http://code.google.com/p/connectbot/ ConnectBot] or adb shell right on your device:
+==Compile from source==
+With [http://code.google.com/p/anmap/wiki/developers_land_debian2android Debian] and [http://code.google.com/p/connectbot/ ConnectBot] or adb shell right on your device:
 {{{
 bootdebian
 
@@ -25,6 +25,7 @@ strip nmap
 ls -la nmap
 }}}
 
+== Start Eclipse ==
 related:<br>
 [http://code.google.com/p/anmap/ code.google.com]
 
