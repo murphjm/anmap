@@ -190,14 +190,13 @@ apt-get install tightvncserver
 apt-get install icewm
 }}}
 
-Configure vncserver:
-Set -geometry to screen resolution and type password.
+Configure vncserver, set -geometry to screen resolution and type password.
 {{{
 export USER=root
 vncserver -geometry 800x480
 }}}
 
-Now it is need to stop vnc and create configure:
+Now it is need to stop vncserver and create configure files:
 {{{
 vncserver -kill :1
 touch /root/.Xresources
@@ -237,7 +236,7 @@ Save all and exit:
 exit
 }}}
 
-Is required vnc client to connect to vncserver. Look at [http://code.google.com/p/android-vnc-viewer/ android-vnc]
+It is required vnc client to connect to vncserver. Look at [http://code.google.com/p/android-vnc-viewer/ android-vnc]
 
 Disconnect usb and reboot.
 
@@ -247,15 +246,20 @@ su
 bootdebian
 }}}
 
-If all good, the output would be like "New 'X' desktop is localhost:1".
+If all good, the output would be looks like:
+{{{
+ "New 'X' desktop is localhost:1".
+}}}
 
 Now start [http://code.google.com/p/android-vnc-viewer/ android-vnc].
 
-Use your password, no username, address is localhost and port - 5901, in color format set 24-bit color, force full-screen format change to auto.
+Use your password, no username, address is localhost and port - 5901, in color format set 24-bit color, force full-screen, format change to auto.
 
 Push connect button.
 
-Voila, starting lxde.
+Voila, starting lxde. 
+
+If you lucky happy owner of system with processor faster than 1Ghz, it is strongly recommended to look at [http://www.enlightenment.org/ e17] windows manager.
 
 Stopping [http://code.google.com/p/android-vnc-viewer/ android-vnc] and enter to [http://code.google.com/p/connectbot/ ConnectBot].
 
@@ -267,4 +271,4 @@ Entering in debian by  [http://code.google.com/p/connectbot/ ConnectBot] and typ
 {{{
 apt-get install g++ make 
 }}}
-Now, you can download and compile whatever you want.
+Now, you can download and compile whatever you want. 
