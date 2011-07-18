@@ -200,7 +200,7 @@ Now it is need to stop vncserver and create configure files:
 {{{
 vncserver -kill :1
 touch /root/.Xresources
-nano /root/.vnc/xstartup
+vi /root/.vnc/xstartup
 }}}
 
 Edit xstartup script:
@@ -212,11 +212,10 @@ icewm &
 lxsession
 }}}
 
-Saving - ctrl+o, enter, ctrl+x
 
 Create autorun script:
 {{{
-nano /root/.bashrc
+vi /root/.bashrc
 }}}
 
 Adding strings:
@@ -248,7 +247,7 @@ bootdebian
 
 If all good, the output would be looks like:
 {{{
- "New 'X' desktop is localhost:1".
+"New 'X' desktop is localhost:1".
 }}}
 
 Now start [http://code.google.com/p/android-vnc-viewer/ android-vnc].
@@ -259,7 +258,7 @@ Push connect button.
 
 Voila, starting lxde. 
 
-If you lucky happy owner of system with processor faster than 1Ghz, it is strongly recommended to look at [http://www.enlightenment.org/ e17] windows manager.
+If you are lucky happy owner of system with processor faster than 1Ghz, it is strongly recommended to look at [http://www.enlightenment.org/ e17] windows manager.
 
 Stopping [http://code.google.com/p/android-vnc-viewer/ android-vnc] and enter to [http://code.google.com/p/connectbot/ ConnectBot], type:
 {{{
@@ -272,4 +271,5 @@ Entering in debian by  [http://code.google.com/p/connectbot/ ConnectBot] and typ
 {{{
 apt-get install g++ make 
 }}}
+
 Now, you can download and compile whatever you want. 
