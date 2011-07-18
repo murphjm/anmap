@@ -49,9 +49,9 @@ rm -r debian/
 This is the end.
 For windows user - linux unrequired any more.
 
-Download debian image(Not done yet).
-  * MD5:
-  * SHA256:
+_Download debian image(Not done yet)._
+  * _MD5:_
+  * _SHA256:_
 
 ==Boot script==
 
@@ -148,7 +148,7 @@ adb push debian.img /mnt/sdcard/external_sd
 adb push bootdebian /mnt/sdcard/external_sd
 }}}
 
-Download example bootdebian script(Not done yet).
+_Download example bootdebian script(Not done yet)._
 
 ==Finish==
 
