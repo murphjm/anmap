@@ -144,6 +144,7 @@ Put it and image to the sdcard:
 adb push debian.img /mnt/sdcard/external_sd
 adb push bootdebian /mnt/sdcard/external_sd
 }}}
+[http://not_done_yet download example bootdebian script]
 
 ==Finish==
 
