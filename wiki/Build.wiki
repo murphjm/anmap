@@ -4,7 +4,7 @@
 
 <font color="red"><h2> This is sketch.</h2> </font>
 
-Compile from source with [http://code.google.com/p/anmap/wiki/developers_land_debian2android Debian] and [http://code.google.com/p/connectbot/ ConnectBot]:
+Compile from source with [http://code.google.com/p/anmap/wiki/developers_land_debian2android Debian] and [http://code.google.com/p/connectbot/ ConnectBot] or adb shell right on your device:
 {{{
 bootdebian
 
