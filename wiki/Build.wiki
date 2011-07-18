@@ -22,7 +22,7 @@ related:<br>
 
 
 = Details =
-<h1>1.Daemon jobs class: </h1>
+<h2>1.Daemon jobs class: </h2>
 <i>SIGNALL's, 
 kill 
 -HUP 
@@ -31,10 +31,10 @@ etc</i>
 
 Universal class to start/stop/restart/reload config/etc for any daemons from sshd to apache.
 
-<h1>2.Content: </h1>
+<h2>2.Content: </h2>
 <i>(xml skelet)</i>
 
-<h1>3.Edit(Main window): </h1>
+<h2>3.Edit(Main window): </h2>
 <i>(nmap command line [popup help] 4ex. current command translation to human language)
 get value in button,</i>
 <br>
@@ -42,7 +42,7 @@ big christmass tree button, you push it and look at tcp packets with rather flag
 from right to left...<br>
 etc.. <br>
 
-<h1>4.Button: start nmap</h1>
+<h2>4.Button: start nmap</h2>
 <i> check for true root privilegies flags, stop with toast or get root and start[Button2: root enable/disable] </i>
 
 {{{
@@ -62,12 +62,12 @@ etc.. <br>
  }
 }}}
 
-<h1>5.Get output(like connectbot)</h1>
+<h2>5.Get output(like connectbot)</h2>
 
 [http://code.google.com/p/connectbot/ connectbot]
 
 <br>
-<h1>6.Get root right</h1>
+<h2>6.Get root right</h2>
 [http://www.google.com/search?btnG=1&pws=0&q=request+root+access+android]
 
 [http://www.stealthcopter.com/blog/2010/01/android-requesting-root-access-in-your-app/]
@@ -103,11 +103,11 @@ public static boolean runRootCommand(String command) {
 
 }}}
 
-<h1>7.Button(Menu): Help </h1>
+<h2>7.Button(Menu): Help </h2>
 {{{
 Man page / ( nmap -h ) / some doc or links
 }}}
-<h1>8.Button(Menu): Bug report/Test how it doing</h1><br>
+<h2>8.Button(Menu): Bug report/Test how it doing</h2><br>
 <i> (Verbose, Sillent)</i> <br>
 <font color="green"><h2>Button(internal): Send bug report.</h2></font><br>
 try to send me email - bug report with full debug log  of root/unroot scanning, and other info, such as: <br>
@@ -118,7 +118,7 @@ try to send me email - bug report with full debug log  of root/unroot scanning, 
  <br>
 
 
-<h1>9.Button(Menu): Journal</h1>
+<h2>9.Button(Menu): Journal</h2>
 
 <i> history by ips/domain-names located on sdcard. </i>
 When you try again any ip, you can get diff highlighted on old scan log  "+"/"-" new/old line.<br>
@@ -126,7 +126,7 @@ Some cool format to contain this diff in long time. <br>
 with all things <br>
 <br>
 
-<h1>10.Monitor mode(like [http://en.wikipedia.org/wiki/Iftop iftop]) (probably, stand alone app)</h1>
+<h2>10.Monitor mode(like [http://en.wikipedia.org/wiki/Iftop iftop]) (probably, stand alone app)</h2>
 {{{
 Network discovery.
 
