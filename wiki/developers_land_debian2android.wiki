@@ -2,6 +2,23 @@
 
 = Introduction =
 
+This is not one hundred percent instruction to start debian on any android device, but it would be that in a short time.
+
+Actually, simply no way to verify, but in fact it should be so.
+
+You need <bold><font color="red">root</font></bold> right!
+
+You need linux. (For windows user easiest way to download livecd)
+
+There are two way for dealing with the terminal device:
+#   With ConnectBot help, right on device 
+#   With adb help, from Android SDK
+
+
+I'm not sure, but you should use adb, as much easier to write commands by the normal human keyboard. 
+
+So get started.
+
 ==Debian image. (debootstrap)==
 Installing:
 {{{
@@ -61,8 +78,14 @@ Adding mount paths:
 {{{
 echo "Setting some stuff up.."
 export bin=/system/bin
-export img=/mnt/sdcard/external_sd/debian.img
+
+export img_path=/mnt/sdcard/external_sd
+export img=$img_path/debian.img
+[ ! -e $img_path ] && mkdir $img_path
+
 export mnt=/data/local/debian
+[ ! -e $mnt ] && mkdir $mnt
+
 export PATH=$bin:/usr/bin:/usr/sbin:/bin:$PATH
 export TERM=linux
 export HOME=/root
