@@ -77,7 +77,7 @@ mount -o remount,rw -t yaffs2 /dev/block/stl9 /system
 
 Remember this path(/dev/block/stl9 /system).
 
-Adding mount paths:
+Adding mounts paths:
 {{{
 echo "Setting some stuff up.."
 export bin=/system/bin
