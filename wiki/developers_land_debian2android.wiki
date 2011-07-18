@@ -38,16 +38,207 @@ For windows user - linux unrequired.
 
 ==Boot script==
 
+Create an script file to start debian, named bootdebian or bootd, whatever.
+
+For the first you should to know path to the folder /system. And remount with write:
+{{{
+adb shell mount
+}}}
+
+Or just mount with ConnectBot.
+
+Looking for string with "/system" and get first path (for example /dev/block/stl9)
+
+Writing in our start debian script file(bootdebian)
+{{{
+echo "Mounting system as R/W"
+mount -o remount,rw -t yaffs2 /dev/block/stl9 /system
+}}}
+
+Remember this path(/dev/block/stl9 /system).
+
+Adding mount paths:
+{{{
+echo "Setting some stuff up.."
+export bin=/system/bin
+export img=/mnt/sdcard/external_sd/debian.img
+export mnt=/data/local/debian
+export PATH=$bin:/usr/bin:/usr/sbin:/bin:$PATH
+export TERM=linux
+export HOME=/root
+}}}
+
+Mounting image on loop device, and configure network:
+{{{
+echo "Mounting the Linux Image"
+mknod /dev/block/loop5 b 7 0
+losetup /dev/block/loop5 $img
+mount -t ext2 -o noatime,nodiratime /dev/block/loop5 $mnt
+mount -t devpts devpts $mnt/dev/pts
+mount -t proc proc $mnt/proc
+mount -t sysfs sysfs $mnt/sys
+
+echo "Setting Up Networking"
+sysctl -w net.ipv4.ip_forward=1
+echo "nameserver 8.8.8.8" > $mnt/etc/resolv.conf
+echo "nameserver 8.8.4.4" >> $mnt/etc/resolv.conf
+echo "127.0.0.1 localhost" > $mnt/etc/hosts
+}}}
+
+Mount memory sdcard and emmc:
+{{{
+echo "Mounting sdcard and emmc in /mnt"
+mkdir $mnt/mnt/external_sd
+busybox mount --bind /mnt/sdcard/external_sd $mnt/mnt/external_sd
+mkdir $mnt/mnt/sdcard
+busybox mount --bind /mnt/sdcard/ $mnt/mnt/sdcard
+}}}
+
+Entering in image by chroot and adding new strings:
+{{{
+echo "Entering CHROOT "
+echo " "
+chroot $mnt /bin/bash
+}}}
+
+When exit, unmount everything.
+
+That's why you should end work with debian by exit command.
+
+Strings:
+{{{
+echo "Shutting down CHROOT"
+umount $mnt/mnt/emmc
+umount $mnt/mnt/sdcard
+sysctl -w net.ipv4.ip_forward=0
+umount $mnt/dev/pts
+umount $mnt/proc
+umount $mnt/sys
+umount $mnt
+losetup -d /dev/block/loop5
+mount -o remount,ro -t yaffs2 /dev/block/stl9 /system
+}}}
+
+That's all. Boot script ready.
+
+Put it and image to the sdcard:
+{{{
+adb push debian.img /mnt/sdcard/external_sd
+adb push bootdebian /mnt/sdcard/external_sd
+}}}
 
 ==Finish==
 
+You need to finish installation and update debian system:
 
-==up X11==
+Do not forget end work with debian by exit command!
+{{{
+adb shell
+su
+mount -o remount,rw -t yaffs2 /dev/block/stl9 /system
+cat /sdcard/bootdebian > /system/xbin/bootdebian
+rm /sdcard/bootdebian
+chmod 777 /system/xbin/bootdebian
+bootdebian
+/debootstrap/debootstrap --second-stage
+echo 'deb http://mirror.yandex.ru/debian lenny main' >/etc/apt/sources.list
+apt-get autoclean
+apt-get update
+exit
+}}}
 
+==X11 Up==
+
+You should use light wm, for example lxde with icewm.
+
+Start debian:
+{{{
+adb shell
+su
+bootdebian
+}}}
+
+Installing lxde, icewm and tightvncserver:
+{{{
+apt-get install lxde
+apt-get install tightvncserver
+apt-get install icewm
+}}}
+
+Configure vncserver:
+
+-geometry is screen resolution 
+
+and password
+{{{
+export USER=root
+vncserver -geometry 800x480
+}}}
+
+Now is need to stop vnc and create configure:
+{{{
+vncserver -kill :1
+touch /root/.Xresources
+nano /root/.vnc/xstartup
+}}}
+
+Edit xstartup script:
+{{{
+#!/bin/bash
+xrdb /root/.Xresources
+xsetroot -solid grey
+icewm &
+lxsession
+}}}
+
+Saving - ctrl+o, enter, ctrl+x
+
+Create autorun script:
+{{{
+nano /root/.bashrc
+}}}
+
+Adding strings:
+{{{
+export USER=root
+cd /
+rm -r -f tmp
+mkdir tmp
+cd /
+vncserver -kill :1
+vncserver -kill :2
+vncserver -geometry 800x480
+}}}
+
+Save all and exit:
+{{{
+exit
+}}}
+
+To connect to vncserver required vnc client.
+
+Reconnect usb and reboot.
+
+Connect with connectbot and type:
+{{{
+su
+bootdebian
+}}}
+
+If all good, the output would be like "New 'X' desktop is localhost:1".
+
+Now start androidVNC.
+
+Use your password, no username, address is localhost and port - 5901, in color format set 24-bit color, force full-screen format change to auto.
+
+Push connect button.
+
+Voila, starting lxde.
+
+Stopping androidVNC and enter to connectbot.
+
+Type "exit".
 
 = Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+Fin.
