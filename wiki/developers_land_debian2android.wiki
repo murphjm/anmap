@@ -69,7 +69,7 @@ mount
 
 Looking for string with "/system" and get first path (for example /dev/block/stl9)
 
-Writing in our start debian script file(bootdebian) next strings:
+Writing in our start debian script file(bootdebian) first strings:
 {{{
 echo "Mounting system as R/W"
 mount -o remount,rw -t yaffs2 /dev/block/stl9 /system
