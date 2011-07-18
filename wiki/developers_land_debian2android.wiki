@@ -81,17 +81,14 @@ Adding mount paths:
 {{{
 echo "Setting some stuff up.."
 export bin=/system/bin
-
 export img_path=/mnt/sdcard/external_sd
 export img=$img_path/debian.img
-[ ! -e $img_path ] && mkdir $img_path
-
 export mnt=/data/local/debian
-[ ! -e $mnt ] && mkdir $mnt
-
 export PATH=$bin:/usr/bin:/usr/sbin:/bin:$PATH
 export TERM=linux
 export HOME=/root
+[ ! -e $mnt ] && mkdir $mnt
+[ ! -e $img_path ] && mkdir $img_path
 }}}
 
 Mounting image on loop device, and configure network:
