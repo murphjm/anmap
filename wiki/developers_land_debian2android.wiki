@@ -69,7 +69,7 @@ mount
 
 Looking for string with "/system" and get first path (for example /dev/block/stl9)
 
-Writing in our start debian script file(bootdebian):
+Writing in our start debian script file(bootdebian) next strings:
 {{{
 echo "Mounting system as R/W"
 mount -o remount,rw -t yaffs2 /dev/block/stl9 /system
@@ -77,7 +77,7 @@ mount -o remount,rw -t yaffs2 /dev/block/stl9 /system
 
 Remember this path(/dev/block/stl9 /system).
 
-Adding mounts paths:
+Strings for mount:
 {{{
 echo "Setting some stuff up.."
 export bin=/system/bin
@@ -91,7 +91,7 @@ export HOME=/root
 [ ! -e $img_path ] && mkdir $img_path
 }}}
 
-Mounting image on loop device, and configure network:
+Strings for mounting image on loop device, and configure network:
 {{{
 echo "Mounting the Linux Image"
 mknod /dev/block/loop5 b 7 0
@@ -108,7 +108,7 @@ echo "nameserver 8.8.4.4" >> $mnt/etc/resolv.conf
 echo "127.0.0.1 localhost" > $mnt/etc/hosts
 }}}
 
-Mount memory sdcard and emmc:
+Strings for mount memory card:
 {{{
 echo "Mounting sdcard and emmc in /mnt"
 mkdir $mnt/mnt/external_sd
@@ -117,7 +117,7 @@ mkdir $mnt/mnt/sdcard
 busybox mount --bind /mnt/sdcard/ $mnt/mnt/sdcard
 }}}
 
-Entering in image by chroot:
+Strings for entering in image by chroot:
 {{{
 echo "Entering CHROOT "
 echo " "
@@ -126,7 +126,7 @@ chroot $mnt /bin/bash
 
 When exit, unmount everything.
 
-That's why you should stop job with debian by "exit" command:
+That's why you should stop work with debian by "exit" command:
 {{{
 echo "Shutting down CHROOT"
 umount $mnt/mnt/emmc
@@ -154,7 +154,7 @@ Download example bootdebian script(Not done yet).
 
 You need to finish installation and update debian system:
 
-Do not forget to stop job with debian by "exit" command! 
+Do not forget to stop work with debian by "exit" command! 
 {{{
 adb shell
 su
@@ -169,7 +169,9 @@ apt-get autoclean
 apt-get update
 exit
 }}}
-P.s. chose nearest debian mirror from [http://www.debian.org/mirror/list list]. 
+
+P.S. Chose nearest debian mirror from [http://www.debian.org/mirror/list list]. 
+
 ==X11 Up==
 
 You should use light windows manager, for example lxde with icewm.
@@ -189,16 +191,13 @@ apt-get install icewm
 }}}
 
 Configure vncserver:
-
--geometry is screen resolution 
-
-and password
+Set -geometry to screen resolution and type password.
 {{{
 export USER=root
 vncserver -geometry 800x480
 }}}
 
-Now is need to stop vnc and create configure:
+Now it is need to stop vnc and create configure:
 {{{
 vncserver -kill :1
 touch /root/.Xresources
@@ -238,9 +237,9 @@ Save all and exit:
 exit
 }}}
 
-Is required vnc client to connect to vncserver.
+Is required vnc client to connect to vncserver. Look at [http://code.google.com/p/android-vnc-viewer/ android-vnc]
 
-Reconnect usb and reboot.
+Disconnect usb and reboot.
 
 Connect with [http://code.google.com/p/connectbot/ ConnectBot] and type:
 {{{
@@ -250,7 +249,7 @@ bootdebian
 
 If all good, the output would be like "New 'X' desktop is localhost:1".
 
-Now start androidVNC.
+Now start [http://code.google.com/p/android-vnc-viewer/ android-vnc].
 
 Use your password, no username, address is localhost and port - 5901, in color format set 24-bit color, force full-screen format change to auto.
 
@@ -258,7 +257,7 @@ Push connect button.
 
 Voila, starting lxde.
 
-Stopping androidVNC and enter to [http://code.google.com/p/connectbot/ ConnectBot].
+Stopping [http://code.google.com/p/android-vnc-viewer/ android-vnc] and enter to [http://code.google.com/p/connectbot/ ConnectBot].
 
 Type "exit".
 
