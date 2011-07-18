@@ -263,4 +263,4 @@ Entering in debian by  [http://code.google.com/p/connectbot/ ConnectBot] and typ
 {{{
 apt-get install g++ make 
 }}}
-Download what you want, compile from source, it would be work.
+Now, you can download and compile what you need.
