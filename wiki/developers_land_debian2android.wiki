@@ -40,7 +40,7 @@ Installing minimal debian linux of arm architecture:
 debootstrap --verbose --arch armel --foreign sid debian 
 }}}
 
-Cleaning:
+Unmounting and cleaning:
 {{{
 umount debian/
 rm -r debian/
