@@ -10,11 +10,13 @@ You need <font color="red">root</font> right!
 
 You need linux. (For windows user easiest way to download livecd)
 
+---- 
 There are two way for dealing with the terminal device:
 
 `With ConnectBot, right on device `
 
 `With adb, from Android SDK`
+
 
 I'm not sure, but you should use adb, as much easier to write commands by the normal human keyboard. 
 
