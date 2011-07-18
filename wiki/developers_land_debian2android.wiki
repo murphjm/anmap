@@ -62,7 +62,10 @@ For the first you should to know path to the folder /system. And remount with wr
 adb shell mount
 }}}
 
-Or just mount with [http://code.google.com/p/connectbot/ ConnectBot].
+Or just connect to localhost with [http://code.google.com/p/connectbot/ ConnectBot] and type:
+{{{
+mount
+}}}
 
 Looking for string with "/system" and get first path (for example /dev/block/stl9)
 
