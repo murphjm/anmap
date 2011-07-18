@@ -262,7 +262,3 @@ Voila, starting lxde.
 Stopping androidVNC and enter to [http://code.google.com/p/connectbot/ ConnectBot].
 
 Type "exit".
-
-= Details =
-
-Fin.
