@@ -10,6 +10,12 @@ You need <font color="red">root</font> right!
 
 You need linux. (For windows user easiest way to download livecd)
 
+The following is:
+  * A list
+  * Of bulleted items
+    # This is a numbered sublist
+    # Which is done by indenting further
+  * And back to the main bulleted list
 
 There are two way for dealing with the terminal device:
 
