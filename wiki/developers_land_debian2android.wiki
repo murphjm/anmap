@@ -14,7 +14,7 @@ There are two way for dealing with the terminal device:
 
 I'm not sure, but you should use adb, as much easier to write commands by the normal human keyboard. 
 
-So get started.
+So get started!
 
 ==Debian image. (debootstrap)==
 Installing:
@@ -152,9 +152,7 @@ _Download example bootdebian script. Not done yet._
 
 ==Finish==
 
-You need to finish installation and update debian system:
-
-Do not forget to stop work with debian by "exit" command! 
+You need to finish installation and update debian system. Do not forget to stop work with debian by "exit" command! 
 {{{
 adb shell
 su
