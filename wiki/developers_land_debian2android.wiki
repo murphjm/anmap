@@ -123,7 +123,7 @@ chroot $mnt /bin/bash
 
 When exit, unmount everything.
 
-That's why you should end work with debian by "exit" command:
+That's why you should stop job with debian by "exit" command:
 {{{
 echo "Shutting down CHROOT"
 umount $mnt/mnt/emmc
@@ -150,7 +150,7 @@ adb push bootdebian /mnt/sdcard/external_sd
 
 You need to finish installation and update debian system:
 
-Do not forget to end work with debian by "exit" command! 
+Do not forget to stop job with debian by "exit" command! 
 {{{
 adb shell
 su
