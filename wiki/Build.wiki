@@ -126,7 +126,7 @@ Some cool format to contain this diff in long time. <br>
 with all things <br>
 <br>
 
-<h3>10.Monitor mode(like [http://en.wikipedia.org/wiki/Iftop iftop]) (probably, stand alone app)</h3>
+<h3>10.Monitor mode(like [http://en.wikipedia.org/wiki/Iftop iftop], [http://freshmeat.net/projects/nload/ nload], [http://nethogs.sourceforge.net/ nethogs], [http://www.phildev.net/iptstate/ ipstate], trafshow) (probably, stand alone app)</h3>
 {{{
 Network discovery.
 
