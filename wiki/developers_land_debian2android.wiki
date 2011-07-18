@@ -261,6 +261,6 @@ Type "exit".
 
 Entering in debian by  [http://code.google.com/p/connectbot/ ConnectBot] and type:
 {{{
-apt-get install g++
+apt-get install g++ make 
 }}}
 Download what you want, compile from source, it would be work.
