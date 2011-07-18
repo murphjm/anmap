@@ -35,7 +35,7 @@ mkdir debian
 mount -o loop debian.img debian/
 }}}
 
-Installing minimal debian linux:
+Installing minimal debian linux of arm architecture:
 {{{
 debootstrap --verbose --arch armel --foreign lenny debian 
 }}}
