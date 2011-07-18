@@ -137,7 +137,7 @@ losetup -d /dev/block/loop5
 mount -o remount,ro -t yaffs2 /dev/block/stl9 /system
 }}}
 
-That's all. Boot script ready.
+That's all. Boot script is ready.
 
 Put it and image to the sdcard:
 {{{
