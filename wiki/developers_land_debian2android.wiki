@@ -1,0 +1,53 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+==Debian image. (debootstrap)==
+Installing:
+{{{
+su -s
+apt-get install debootstrap
+}}}
+
+Create an image with ext2 file system:
+{{{
+dd if=/dev/zero of=debian.img seek=1900000000 bs=1 count=1
+mke2fs -F debian.img
+}}}
+
+Mounting:
+{{{
+mkdir debian
+mount -o loop debian.img debian/
+}}}
+
+Installing minimal debian linux:
+{{{
+debootstrap --verbose --arch armel --foreign lenny debian 
+}}}
+
+Cleaning:
+{{{
+umount debian/
+rm -r debian/
+}}}
+
+This is the end.
+For windows user - linux unrequired.
+
+
+==Boot script==
+
+
+==Finish==
+
+
+==up X11==
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
