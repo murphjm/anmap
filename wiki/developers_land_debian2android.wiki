@@ -233,7 +233,7 @@ Save all and exit:
 exit
 }}}
 
-To connect to vncserver required vnc client.
+Is required vnc client to connect to vncserver.
 
 Reconnect usb and reboot.
 
