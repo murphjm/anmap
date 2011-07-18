@@ -261,9 +261,10 @@ Voila, starting lxde.
 
 If you lucky happy owner of system with processor faster than 1Ghz, it is strongly recommended to look at [http://www.enlightenment.org/ e17] windows manager.
 
-Stopping [http://code.google.com/p/android-vnc-viewer/ android-vnc] and enter to [http://code.google.com/p/connectbot/ ConnectBot].
-
-Type "exit".
+Stopping [http://code.google.com/p/android-vnc-viewer/ android-vnc] and enter to [http://code.google.com/p/connectbot/ ConnectBot], type:
+{{{
+exit
+}}}
 
 ==Developer's==
 
