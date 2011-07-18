@@ -63,7 +63,7 @@ For the first you should to know path to the folder /system. And remount with wr
 adb shell mount
 }}}
 
-Or just mount with ConnectBot.
+Or just mount with [http://code.google.com/p/connectbot/ ConnectBot].
 
 Looking for string with "/system" and get first path (for example /dev/block/stl9)
 
@@ -243,7 +243,7 @@ To connect to vncserver required vnc client.
 
 Reconnect usb and reboot.
 
-Connect with connectbot and type:
+Connect with [http://code.google.com/p/connectbot/ ConnectBot] and type:
 {{{
 su
 bootdebian
@@ -259,7 +259,7 @@ Push connect button.
 
 Voila, starting lxde.
 
-Stopping androidVNC and enter to connectbot.
+Stopping androidVNC and enter to [http://code.google.com/p/connectbot/ ConnectBot].
 
 Type "exit".
 
