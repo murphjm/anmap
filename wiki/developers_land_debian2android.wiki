@@ -47,7 +47,7 @@ rm -r debian/
 }}}
 
 This is the end.
-For windows user - linux unrequired.
+For windows user - linux unrequired more.
 
 [http://not_done_yet Download debian image.(Not done yet)]:
   * MD5:
