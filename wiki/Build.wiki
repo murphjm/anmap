@@ -119,14 +119,14 @@ try to send me email - bug report with full debug log  of root/unroot scanning, 
 
 
 <h1>9.Button(Menu): Journal</h1>
-{{{
+
 <i> history by ips/domain-names located on sdcard. </i>
 When you try again any ip, you can get diff highlighted on old scan log  "+"/"-" new/old line.<br>
 Some cool format to contain this diff in long time. <br>
 with all things <br>
 <br>
-}}}
-<h1>10.Monitor mode(like ntop) (probably, stand alone app)</h1>
+
+<h1>10.Monitor mode(like [http://en.wikipedia.org/wiki/Iftop iftop]) (probably, stand alone app)</h1>
 {{{
 Network discovery.
 
