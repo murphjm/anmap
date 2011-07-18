@@ -5,7 +5,7 @@
 This is not one hundred percent instruction to start debian on any android device, but it would be that in a short time.
 Actually, simply no way to verify, but in fact it should be so.
 
-You need <font color="red">root</font> right! And you need linux. (For windows user easiest way to download livecd)
+You need <font color="red">root</font> right! And you need linux. For windows user easiest way to download livecd.
 
 There are two way for dealing with the terminal device:
   * With [http://code.google.com/p/connectbot/ ConnectBot], right on device
@@ -23,7 +23,7 @@ su -s
 apt-get install debootstrap
 }}}
 
-Create an image with ext2 file system(it's recommended no more than 2Gb):
+Create an image with ext2 file system. It's recommended no more than 2Gb:
 {{{
 dd if=/dev/zero of=debian.img seek=1900000000 bs=1 count=1
 mke2fs -F debian.img
@@ -49,7 +49,7 @@ rm -r debian/
 This is the end.
 For windows user - linux unrequired any more.
 
-_Download debian image(Not done yet)._
+_Download debian image. Not done yet._
   * _MD5:_
   * _SHA256:_
 
@@ -148,7 +148,7 @@ adb push debian.img /mnt/sdcard/external_sd
 adb push bootdebian /mnt/sdcard/external_sd
 }}}
 
-_Download example bootdebian script(Not done yet)._
+_Download example bootdebian script. Not done yet._
 
 ==Finish==
 
