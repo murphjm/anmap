@@ -11,7 +11,7 @@ You need <font color="red">root</font> right!
 You need linux. (For windows user easiest way to download livecd)
 
 There are two way for dealing with the terminal device:
-  * With ConnectBot, right on device
+  * With [http://code.google.com/p/connectbot/ ConnectBot], right on device
   * With adb, from Android SDK
 
 
