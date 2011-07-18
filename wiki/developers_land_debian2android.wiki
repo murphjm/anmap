@@ -16,7 +16,7 @@ I'm not sure, but you should use adb, as much easier to write commands by the no
 
 So get started!
 
-==Debian image. (debootstrap)==
+==Debian image (debootstrap)==
 Installing:
 {{{
 su -s
