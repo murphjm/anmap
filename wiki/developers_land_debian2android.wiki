@@ -167,7 +167,7 @@ exit
 P.s. chose nearest debian mirror from [http://www.debian.org/mirror/list list]. 
 ==X11 Up==
 
-You should use light wm, for example lxde with icewm.
+You should use light windows manager, for example lxde with icewm.
 
 Start debian:
 {{{
