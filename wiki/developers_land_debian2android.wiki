@@ -72,7 +72,6 @@ Looking for string with "/system" and get first path (for example /dev/block/stl
 
 Writing in our start debian script file(bootdebian) next strings:
 {{{
-
 ### Remember this path(/dev/block/stl9 /system).
 
 export system_mount_point=/dev/block/stl9
@@ -119,14 +118,14 @@ busybox mount --bind /mnt/sdcard/ $mnt/mnt/sdcard
 
 ### Strings for entering in image by chroot:
 
-echo "Entering CHROOT "
+echo "Entering chroot"
 echo " "
 chroot $mnt /bin/bash
 
 ### When exit, unmount everything.
 ### That's why you should stop work with debian by "exit" command:
 
-echo "Shutting down CHROOT"
+echo "Shutting down chroot"
 umount $mnt/mnt/emmc
 umount $mnt/mnt/sdcard
 sysctl -w net.ipv4.ip_forward=0
@@ -157,9 +156,9 @@ adb shell
 $ su
 # mount -o remount,rw -t yaffs2 /dev/block/stl9 /system
 # cat /sdcard/bootdebian > /system/xbin/bootdebian
-# rm /sdcard/bootdebian
 # chmod 777 /system/xbin/bootdebian
 # bootdebian
+
 # /debootstrap/debootstrap --second-stage
 # echo 'deb http://ftp.au.debian.org/debian/debian sid main' >/etc/apt/sources.list
 # apt-get autoclean
