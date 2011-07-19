@@ -23,7 +23,7 @@ $ su -s
 # apt-get install debootstrap
 }}}
 
-Create an image with ext2 file system. It's recommended no more than 2Gb:
+Create an image with ext2 file system. It's not recommended to set size more than 2Gb:
 {{{
 # dd if=/dev/zero of=debian.img seek=1900000000 bs=1 count=1
 # mke2fs -F debian.img
