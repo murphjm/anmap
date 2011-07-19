@@ -26,7 +26,7 @@ Now, you have nmap installed on debian image, try to strip it:
 
 And try to scan:
 {{{
-# nmap localhost
+# ./nmap localhost
 }}}
 
 
