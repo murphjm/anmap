@@ -133,7 +133,7 @@ umount $mnt/proc
 umount $mnt/sys
 umount $mnt
 losetup -d /dev/block/loop5
-mount -o remount,ro -t yaffs2 /dev/block/stl9 /system
+mount -o remount,ro -t yaffs2 $system_mount_point /system
 }}}
 
 That's all. Boot script is ready.
