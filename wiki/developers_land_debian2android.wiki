@@ -145,7 +145,7 @@ adb push debian.img /mnt/sdcard/external_sd
 adb push bootdebian /mnt/sdcard/external_sd
 }}}
 
-_Download example bootdebian script. Not done yet._
+[http://code.google.com/p/anmap/source/browse/bootdebian Download example bootdebian script.]
 
 ==Finish==
 
