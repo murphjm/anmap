@@ -19,31 +19,31 @@ So get started!
 ==Debian image (debootstrap)==
 Installing:
 {{{
-su -s
-apt-get install debootstrap
+$ su -s
+# apt-get install debootstrap
 }}}
 
 Create an image with ext2 file system. It's recommended no more than 2Gb:
 {{{
-dd if=/dev/zero of=debian.img seek=1900000000 bs=1 count=1
-mke2fs -F debian.img
+# dd if=/dev/zero of=debian.img seek=1900000000 bs=1 count=1
+# mke2fs -F debian.img
 }}}
 
 Mounting:
 {{{
-mkdir debian
-mount -o loop debian.img debian/
+# mkdir debian
+# mount -o loop debian.img debian/
 }}}
 
 Installing minimal debian linux of arm architecture:
 {{{
-debootstrap --verbose --arch armel --foreign sid debian 
+# debootstrap --verbose --arch armel --foreign sid debian 
 }}}
 
 Unmounting and cleaning:
 {{{
-umount debian/
-rm -r debian/
+# umount debian/
+# rm -r debian/
 }}}
 
 This is the end.
@@ -64,7 +64,7 @@ adb shell mount
 
 Or just connect to localhost with [http://code.google.com/p/connectbot/ ConnectBot] and type:
 {{{
-mount
+$ mount
 }}}
 
 Looking for string with "/system" and get first path (for example /dev/block/stl9)
@@ -152,17 +152,17 @@ adb push bootdebian /mnt/sdcard/external_sd
 You need to finish installation and update debian system. Do not forget to stop work with debian by "exit" command! 
 {{{
 adb shell
-su
-mount -o remount,rw -t yaffs2 /dev/block/stl9 /system
-cat /sdcard/bootdebian > /system/xbin/bootdebian
-rm /sdcard/bootdebian
-chmod 777 /system/xbin/bootdebian
-bootdebian
-/debootstrap/debootstrap --second-stage
-echo 'deb http://ftp.au.debian.org/debian/debian sid main' >/etc/apt/sources.list
-apt-get autoclean
-apt-get update
-exit
+$ su
+# mount -o remount,rw -t yaffs2 /dev/block/stl9 /system
+# cat /sdcard/bootdebian > /system/xbin/bootdebian
+# rm /sdcard/bootdebian
+# chmod 777 /system/xbin/bootdebian
+# bootdebian
+# /debootstrap/debootstrap --second-stage
+# echo 'deb http://ftp.au.debian.org/debian/debian sid main' >/etc/apt/sources.list
+# apt-get autoclean
+# apt-get update
+# exit
 }}}
 
 P.S. Chose nearest debian mirror from [http://www.debian.org/mirror/list list]. 
@@ -174,28 +174,28 @@ You should use light windows manager, for example lxde with icewm.
 Start debian:
 {{{
 adb shell
-su
-bootdebian
+$ su
+# bootdebian
 }}}
 
 Installing lxde, icewm and tightvncserver:
 {{{
-apt-get install lxde
-apt-get install tightvncserver
-apt-get install icewm
+# apt-get install lxde
+# apt-get install tightvncserver
+# apt-get install icewm
 }}}
 
 Configure vncserver, set -geometry to screen resolution and type password.
 {{{
-export USER=root
-vncserver -geometry 800x480
+# export USER=root
+# vncserver -geometry 800x480
 }}}
 
 Now it is need to stop vncserver and create configure files:
 {{{
-vncserver -kill :1
-touch /root/.Xresources
-vi /root/.vnc/xstartup
+# vncserver -kill :1
+# touch /root/.Xresources
+# vi /root/.vnc/xstartup
 }}}
 
 Edit xstartup script:
@@ -210,7 +210,7 @@ lxsession
 
 Create autorun script:
 {{{
-vi /root/.bashrc
+# vi /root/.bashrc
 }}}
 
 Adding strings:
@@ -227,7 +227,7 @@ vncserver -geometry 800x480
 
 Save all and exit:
 {{{
-exit
+# exit
 }}}
 
 It is required vnc client to connect to vncserver. Look at [http://code.google.com/p/android-vnc-viewer/ android-vnc]
@@ -236,8 +236,8 @@ Disconnect usb and reboot.
 
 Connect with [http://code.google.com/p/connectbot/ ConnectBot] and type:
 {{{
-su
-bootdebian
+$ su
+# bootdebian
 }}}
 
 If all good, the output would be looks like:
@@ -257,14 +257,16 @@ If you are lucky happy owner of system with processor faster than 1Ghz, it is st
 
 Stopping [http://code.google.com/p/android-vnc-viewer/ android-vnc] and enter to [http://code.google.com/p/connectbot/ ConnectBot], type:
 {{{
-exit
+# exit
 }}}
 
 ==Developer's==
 
 Entering in debian by  [http://code.google.com/p/connectbot/ ConnectBot] and type:
 {{{
-apt-get install g++ make 
+$ su
+# bootdebian
+# apt-get install g++ make 
 }}}
 
-Now, you can download and compile whatever you want. 
+Now, you can get and compile whatever you want. 
