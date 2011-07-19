@@ -85,6 +85,7 @@ export bin=/system/bin
 export img_path=/mnt/sdcard/external_sd
 export img=$img_path/debian.img
 export mnt=/data/local/debian
+export loop_device=/dev/block/loop5
 export PATH=$bin:/usr/bin:/usr/sbin:/bin:$PATH
 export TERM=linux
 export HOME=/root
@@ -94,9 +95,9 @@ export HOME=/root
 ### Strings for mounting image on loop device, and configure network:
 
 echo "Mounting the Linux Image"
-mknod /dev/block/loop5 b 7 0
-losetup /dev/block/loop5 $img
-mount -t ext2 -o noatime,nodiratime /dev/block/loop5 $mnt
+mknod $loop_device b 7 0
+losetup $loop_device $img
+mount -t ext2 -o noatime,nodiratime $loop_device $mnt
 mount -t devpts devpts $mnt/dev/pts
 mount -t proc proc $mnt/proc
 mount -t sysfs sysfs $mnt/sys
@@ -110,9 +111,9 @@ echo "127.0.0.1 localhost" > $mnt/etc/hosts
 ### Strings for mount memory card:
 
 echo "Mounting sdcard and emmc in /mnt"
-mkdir $mnt/mnt/external_sd
+[ ! -e $mnt/mnt/external_sd ] && mkdir $mnt/mnt/external_sd
 busybox mount --bind /mnt/sdcard/external_sd $mnt/mnt/external_sd
-mkdir $mnt/mnt/sdcard
+[ ! -e $mnt/mnt/sdcard ] && mkdir $mnt/mnt/sdcard
 busybox mount --bind /mnt/sdcard/ $mnt/mnt/sdcard
 
 ### Strings for entering in image by chroot:
@@ -132,7 +133,7 @@ umount $mnt/dev/pts
 umount $mnt/proc
 umount $mnt/sys
 umount $mnt
-losetup -d /dev/block/loop5
+losetup -d $loop_device
 mount -o remount,ro -t yaffs2 $system_mount_point /system
 }}}
 
