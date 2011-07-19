@@ -4,7 +4,7 @@
 
 This is not one hundred percent instruction to start debian on any android device, but it would be that in a short time.
 Actually, simply no way to verify, but in fact it should be so already.
-This is translated and composed from [http://4pda.ru/forum/index.php?showtopic=223191 1] [http://lanrat.com/android/debian 2] [http://www.androidfanatic.com/community-forums.html?func=view&catid=9&id=1615 3].
+This text is translated and composed from [http://4pda.ru/forum/index.php?showtopic=223191 1] [http://lanrat.com/android/debian 2] [http://www.androidfanatic.com/community-forums.html?func=view&catid=9&id=1615 3].
 
 You need <font color="red">root</font> right! And you need linux. For windows user easiest way to download livecd.
 
