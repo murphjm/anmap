@@ -3,7 +3,7 @@
 = Introduction =
 
 This is not one hundred percent instruction to start debian on any android device, but it would be that in a short time.
-Actually, simply no way to verify, but in fact it should be so.
+Actually, simply no way to verify, but in fact it should be so already.
 
 You need <font color="red">root</font> right! And you need linux. For windows user easiest way to download livecd.
 
