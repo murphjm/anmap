@@ -58,7 +58,7 @@ _Download debian image. Not done yet._
 
 Create an script file to start debian, named bootdebian or bootd, whatever.
 
-For the first you should to know path to the folder /system:
+For the first you should to know a path to the folder /system:
 {{{
 adb shell mount
 }}}
