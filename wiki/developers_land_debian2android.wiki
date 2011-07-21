@@ -250,8 +250,6 @@ If all good, the output would be looks like:
 
 <img align="right" src="http://www.enlightenment.org/p/about/d/phone.png"> 
 
-</a>
-
 Now start [http://code.google.com/p/android-vnc-viewer/ android-vnc].
 
 Use your password, no username, address is localhost and port - 5901, in color format set 24-bit color, force full-screen, format change to auto.
