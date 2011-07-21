@@ -254,7 +254,9 @@ Push connect button.
 
 Voila, starting lxde. 
 
-If you are lucky happy owner of system with processor faster than 1Ghz, it is strongly recommended to look at [http://www.enlightenment.org/ e17] windows manager. <img src="http://www.enlightenment.org/p/about/d/phone.png">
+If you are lucky happy owner of system with processor faster than 1Ghz, it is strongly recommended to look at [http://www.enlightenment.org/ e17] windows manager. 
+
+<img align="left" src="http://www.enlightenment.org/p/about/d/phone.png">
 
 Stopping [http://code.google.com/p/android-vnc-viewer/ android-vnc] and enter to [http://code.google.com/p/connectbot/ ConnectBot], type:
 {{{
