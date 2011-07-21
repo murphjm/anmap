@@ -246,7 +246,11 @@ If all good, the output would be looks like:
 "New 'X' desktop is localhost:1".
 }}}
 
-<a href="http://www.enlightenment.org/"> <img align="right" src="http://www.enlightenment.org/p/about/d/phone.png"> </a>
+<a href="http://www.enlightenment.org/"> 
+
+<img align="right" src="http://www.enlightenment.org/p/about/d/phone.png"> 
+
+</a>
 
 Now start [http://code.google.com/p/android-vnc-viewer/ android-vnc].
 
