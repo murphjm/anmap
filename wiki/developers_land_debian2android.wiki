@@ -252,7 +252,14 @@ If all good, the output would be looks like:
 
 Now start [http://code.google.com/p/android-vnc-viewer/ android-vnc].
 
-Use your password, no username, address is localhost and port - 5901, in color format set 24-bit color, force full-screen, format change to auto.
+Use next settings:
+  * Your password
+  * No username
+  * Address is localhost 
+  * Port - 5901
+  * In color format set 24-bit color
+  * Force full-screen,
+  * Format change to auto.
 
 Push connect button.
 
