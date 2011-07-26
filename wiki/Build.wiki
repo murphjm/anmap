@@ -13,8 +13,18 @@ $ su
 # wget http://nmap.org/dist/nmap-5.59BETA1.tar.bz2
 # bzip2 -cd nmap-5.59BETA1.tar.bz2 | tar xvf -
 # cd nmap-5.59BETA1
-# ./configure
-# make
+# ./configure --enable-static --without-nping --without-zenmap --without-ndiff --without-liblua  --without-ncat 
+# make static
+}}}
+Or use this Makefile [http://anmap.googlecode.com/svn/branches/nmap.android nmap.android]
+{{{
+$ su
+# bootdebian
+
+# cd /usr/src
+# wget http://nmap.org/dist/nmap-5.59BETA1.tar.bz2
+# wget http://anmap.googlecode.com/svn/branches/nmap.android 
+# sh nmap.android
 }}}
 
 Now, you have nmap installed on debian image, try to strip it:
