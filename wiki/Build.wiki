@@ -27,8 +27,9 @@ $ su
 # bash nmap.android
 }}}
 
-Now, you have nmap installed on debian image, try to strip it:
+Now, you have compiled nmap, try to strip it:
 {{{
+# cp nmap nmap.not_stripped 
 # ls -la nmap
 # strip nmap
 # ls -la nmap
