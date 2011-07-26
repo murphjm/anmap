@@ -58,7 +58,7 @@ _Download debian image. Not done yet._
 
 Create an script file to start debian, named bootdebian or bootd, whatever.
 
-For the first you should to know a path to the folder /system:
+For the first you should to know a path to folder /system:
 {{{
 adb shell mount
 }}}
@@ -140,7 +140,7 @@ mount -o remount,ro -t yaffs2 $system_mount_point /system
 
 That's all. Boot script is ready.
 
-Put it and image to the sdcard:
+Put it and image to sdcard:
 {{{
 adb push debian.img /mnt/sdcard/external_sd
 adb push bootdebian /mnt/sdcard/external_sd
