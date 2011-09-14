@@ -52,7 +52,7 @@ For windows user - linux unrequired any more.
 
 _Download minimal debian image._
   * MD5(debian.img)= c4ed6bb828a10c933a2ae79065c77f5c
-  * _SHA256:_
+  * SHA(debian.img)= 772228c9182a6cda1782b792a2ea38028f832d04
 
 ==Boot script==
 
