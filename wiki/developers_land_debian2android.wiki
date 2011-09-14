@@ -36,7 +36,7 @@ Mounting:
 # mount -o loop debian.img debian/
 }}}
 
-Installing minimal debian linux of arm architecture:
+Installing minimal debian linux of arm architecture(last is sid link date):
 {{{
 # debootstrap --verbose --arch armel --foreign sid debian 
 }}}
