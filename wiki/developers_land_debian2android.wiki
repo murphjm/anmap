@@ -36,9 +36,9 @@ Mounting:
 # mount -o loop debian.img debian/
 }}}
 
-Installing minimal debian linux of arm architecture(last is sid link date):
+Installing minimal debian linux of arm architecture(last is squeeze link date):
 {{{
-# debootstrap --verbose --arch armel --foreign sid debian 
+# debootstrap --verbose --arch armel --foreign squeeze debian 
 }}}
 
 Unmounting and cleaning:
@@ -51,8 +51,8 @@ This is the end.
 For windows user - linux unrequired any more.
 
 _Download minimal debian image._
-  * MD5(debian.img)= c4ed6bb828a10c933a2ae79065c77f5c
-  * SHA(debian.img)= 772228c9182a6cda1782b792a2ea38028f832d04
+  * MD5(debian.img)= 
+  * SHA(debian.img)= 
 
 ==Boot script==
 
