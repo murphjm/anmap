@@ -89,8 +89,8 @@ export loop_device=/dev/block/loop5
 export PATH=$bin:/usr/bin:/usr/sbin:/bin:$PATH
 export TERM=linux
 export HOME=/root
-[ ! -e $mnt ] && mkdir $mnt
-[ ! -e $img_path ] && mkdir $img_path
+[ ! -e $mnt ] && mkdir -p $mnt
+[ ! -e $img_path ] && mkdir -p $img_path
 
 ### Strings for mounting image on loop device, and configure network:
 
@@ -111,21 +111,21 @@ echo "127.0.0.1 localhost" > $mnt/etc/hosts
 ### Strings for mount memory card:
 
 echo "Mounting sdcard and emmc in /mnt"
-[ ! -e $mnt/mnt/external_sd ] && mkdir $mnt/mnt/external_sd
+[ ! -e $mnt/mnt/external_sd ] && mkdir -p $mnt/mnt/external_sd
 busybox mount --bind /mnt/sdcard/external_sd $mnt/mnt/external_sd
-[ ! -e $mnt/mnt/sdcard ] && mkdir $mnt/mnt/sdcard
+[ ! -e $mnt/mnt/sdcard ] && mkdir -p $mnt/mnt/sdcard
 busybox mount --bind /mnt/sdcard/ $mnt/mnt/sdcard
 
 ### Strings for entering in image by chroot:
 
-echo "Entering chroot"
+echo "Entering CHROOT "
 echo " "
 chroot $mnt /bin/bash
 
 ### When exit, unmount everything.
 ### That's why you should stop work with debian by "exit" command:
 
-echo "Shutting down chroot"
+echo "Shutting down CHROOT"
 umount $mnt/mnt/emmc
 umount $mnt/mnt/sdcard
 sysctl -w net.ipv4.ip_forward=0
