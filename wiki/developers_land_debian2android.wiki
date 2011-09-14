@@ -50,7 +50,7 @@ Unmounting and cleaning:
 This is the end.
 For windows user - linux unrequired any more.
 
-_Download debian image. Not done yet._
+_Download minimal debian image._
   * MD5(debian.img)= c4ed6bb828a10c933a2ae79065c77f5c
   * _SHA256:_
 
