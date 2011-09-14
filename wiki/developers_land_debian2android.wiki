@@ -37,6 +37,7 @@ Mounting:
 }}}
 
 Look at [http://www.debian.org/doc/manuals/project-history/index.en.html A Brief History of Debian] and chose a latest debian release, also look at your current linux kernel version. 
+
 Installing minimal debian linux of arm architecture([http://www.debian.org/releases/stable/ Debian “squeeze”] June 25th, 2011):
 {{{
 # debootstrap --verbose --arch armel --foreign squeeze debian 
