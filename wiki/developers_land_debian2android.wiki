@@ -168,6 +168,10 @@ $ su
 
 P.S. Chose nearest debian mirror from [http://www.debian.org/mirror/list list]. 
 
+_Download debian image with second stage._
+    MD5(debian.img)= 
+    SHA(debian.img)= 
+
 ==X11 Up==
 
 You should use light windows manager, for example lxde with icewm.
@@ -273,6 +277,10 @@ Stopping [http://code.google.com/p/android-vnc-viewer/ android-vnc] and enter to
 {{{
 # exit
 }}}
+
+_Download debian image with X._
+    MD5(debian.img)= 
+    SHA(debian.img)= 
 
 ==Developer's==
 
