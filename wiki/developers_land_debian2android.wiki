@@ -170,8 +170,8 @@ $ su
 P.S. Chose nearest debian mirror from [http://www.debian.org/mirror/list list]. 
 
 _Download debian image with second stage._
-    MD5(debian.img)= 
-    SHA(debian.img)= 
+    * MD5(debian.img)= 
+    * SHA(debian.img)= 
 
 ==X11 Up==
 
@@ -280,8 +280,8 @@ Stopping [http://code.google.com/p/android-vnc-viewer/ android-vnc] and enter to
 }}}
 
 _Download debian image with X._
-    MD5(debian.img)= 
-    SHA(debian.img)= 
+    * MD5(debian.img)= 
+    * SHA(debian.img)= 
 
 ==Developer's==
 
