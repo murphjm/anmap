@@ -164,7 +164,7 @@ $ su
 # bootdebian
 
 # /debootstrap/debootstrap --second-stage
-# echo 'deb http://ftp.au.debian.org/debian/debian sid main' >/etc/apt/sources.list
+# echo 'deb http://ftp.au.debian.org/debian/debian squeeze main' >/etc/apt/sources.list
 # apt-get autoclean
 # apt-get update
 # exit
