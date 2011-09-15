@@ -52,12 +52,6 @@ Unmounting and cleaning:
 This is the end.
 For windows user - linux unrequired any more.
 
-_Download minimal debian image._
-  * MD5(squeeze.img)= 658cedaf4a346c5e23ed8bca285212bb
-  * SHA(squeeze.img)= b27770f90345612b5df67dc80ed494f637f589a5de4630340ccce3ee628bac05
-
-Rename this image file after unzip into debian.img or edit bootscript.
-
 ==Boot script==
 
 Create an script file to start debian, named bootdebian or bootd, whatever.
