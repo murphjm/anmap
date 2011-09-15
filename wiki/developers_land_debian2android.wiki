@@ -53,8 +53,8 @@ This is the end.
 For windows user - linux unrequired any more.
 
 _Download minimal debian image._
-  * MD5(debian.img)= 658cedaf4a346c5e23ed8bca285212bb
-  * SHA(debian.img)= b27770f90345612b5df67dc80ed494f637f589a5de4630340ccce3ee628bac05
+  * MD5(squeeze.img)= 658cedaf4a346c5e23ed8bca285212bb
+  * SHA(squeeze.img)= b27770f90345612b5df67dc80ed494f637f589a5de4630340ccce3ee628bac05
 
 ==Boot script==
 
@@ -171,8 +171,8 @@ $ su
 P.S. Chose nearest debian mirror from [http://www.debian.org/mirror/list list]. 
 
 _Download debian image with second stage._
-    * MD5(debian.img)= 
-    * SHA(debian.img)= 
+    * MD5(squeeze.img)= 
+    * SHA(squeeze.img)= 
 
 ==X11 Up==
 
@@ -281,8 +281,8 @@ Stopping [http://code.google.com/p/android-vnc-viewer/ android-vnc] and enter to
 }}}
 
 _Download debian image with X._
-    * MD5(debian.img)= 
-    * SHA(debian.img)= 
+    * MD5(squeezeX.img)= 
+    * SHA(squeezeX.img)= 
 
 ==Developer's==
 
