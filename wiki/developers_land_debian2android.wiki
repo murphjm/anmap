@@ -26,7 +26,7 @@ $ su -s
 
 Create an image with ext2 file system. It's not recommended to set size more than 2Gb(2147483648 bytes):
 {{{
-# dd if=/dev/zero of=debian.img seek=2147483648 bs=1 count=1
+# dd if=/dev/zero of=debian.img seek=2147483647 bs=1 count=1
 # mke2fs -F debian.img
 }}}
 
