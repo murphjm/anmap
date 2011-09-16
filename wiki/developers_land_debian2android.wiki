@@ -170,8 +170,8 @@ $ su
 P.S. Chose nearest debian mirror from [http://www.debian.org/mirror/list list]. 
 
 _Download debian image with second stage._
-    * MD5(debian.img)= 
-    * SHA(debian.img)= 
+    * MD5(debian.img)= 1ee49b360ea4aabdb21247acb09d6546
+    * SHA(debian.img)= 32850d4760d0f208e2d687e754f61a1080421bd2a0649e7a9d3890f11557d6da
 
 ==X11 Up==
 
