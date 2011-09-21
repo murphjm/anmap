@@ -93,9 +93,7 @@ Universal class to start/stop/restart/reload config/etc for any daemons from ssh
 </RelativeLayout>
 }}}
 
-<h3>3.Edit(Main window): </h3>
-<i>(nmap command line [popup help] 4ex. current command translation to human language)
-get value in button,</i>
+<h3>3.EditText: nmap flags & target </h3>
 <br>
 big christmass tree button, you push it and look at tcp packets with rather flags fly from left to right side of you mobile device monitor.<br>
 from right to left...<br>
