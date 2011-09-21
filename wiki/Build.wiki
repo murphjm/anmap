@@ -65,8 +65,33 @@ etc</i>
 
 Universal class to start/stop/restart/reload config/etc for any daemons from sshd to apache.
 
-<h3>2.Content: </h3>
-<i>(xml skelet)</i>
+<h3>2.Content(main.xml): </h3>
+{{{
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter target:"/>
+   <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/label"
+        android:text="nmap" />
+    <EditText
+        android:id="@+id/entry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_toRightOf="@id/button"
+        android:layout_below="@id/label"/>
+</RelativeLayout>
+}}}
 
 <h3>3.Edit(Main window): </h3>
 <i>(nmap command line [popup help] 4ex. current command translation to human language)
