@@ -105,7 +105,7 @@ final Button button = (Button) findViewById(R.id.button);
 button.setOnClickListener(new View.OnClickListener() {
 	public void onClick(View v) {
 	Toast.makeText(v.getContext(), "Start scanning...\n" + cmd , Toast.LENGTH_SHORT).show();
-	//Scanning!
+	// Scanning!
 	Toast.makeText(v.getContext(), "Scanning finished!\n", Toast.LENGTH_SHORT).show();
 	}
 });
