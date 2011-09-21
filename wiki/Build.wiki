@@ -102,8 +102,6 @@ from right to left...<br>
 etc.. <br>
 
 <h3>4.Button: start nmap</h3>
-<i> check for true root privilegies flags, stop with toast or get root and start[Button2: root enable/disable] </i>
-
 {{{
 final Button button = (Button) findViewById(R.id.button);
 button.setOnClickListener(new View.OnClickListener() {
