@@ -1,7 +1,7 @@
 #summary One-sentence summary of this page.
 
-= How-to build new version <font color="red"><h2> sketch </h2> </font>=
-
+= How-to build new version =
+<font color="red"><h2> sketch </h2> </font>
 ==Compile from source==
 With [http://code.google.com/p/anmap/wiki/developers_land_debian2android Debian] and [http://code.google.com/p/connectbot/ ConnectBot] or adb shell right on your device:
 {{{
