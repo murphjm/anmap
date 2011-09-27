@@ -40,19 +40,14 @@ And try to scan:
 }}}
 
 
-== Start Eclipse ==
+== Android GUI Wrapper ==
 related:<br>
-[http://code.google.com/p/anmap/ code.google.com]
 
-[http://code.google.com/p/androidterm/ androidterm]
-
-[http://code.google.com/p/cidrcalculator/source/browse/trunk/src/us/lindanrandy/cidrcalculator/Converter.java cidrcalculator/..blabla../Converter.java] 
-
-[https://github.com/rorist/android-network-discovery android-network-discovery]
-
-[http://code.google.com/p/connectbot/ connectbot]
-
-
+#[http://code.google.com/p/anmap/ code.google.com]
+#[http://code.google.com/p/androidterm/ androidterm]
+#[http://code.google.com/p/cidrcalculator/source/browse/trunk/src/us/lindanrandy/cidrcalculator/Converter.java cidrcalculator/..blabla../Converter.java] 
+#[https://github.com/rorist/android-network-discovery android-network-discovery]
+#[http://code.google.com/p/connectbot/ connectbot]
 
 = Details =
 <h3>1.Daemon jobs class: </h3>
