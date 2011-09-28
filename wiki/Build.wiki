@@ -183,4 +183,6 @@ View in real time state netland, like a top(UNIX).
 
 (by nmap -O -iL current_ip_list)
 
+(by mac address, etc, create some profile and monitoring this machine that you have to contact)
+
 }}}
